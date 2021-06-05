@@ -1,0 +1,14 @@
+@mixin baElements ($w, $h) {
+  content: "";
+  display: inline-block;
+  width: $w;
+  height: $h;
+}
+
+@mixin baImages ($w, $h, $url) {
+  @include baElements($w, $h);
+
+  background-image: url($url);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
