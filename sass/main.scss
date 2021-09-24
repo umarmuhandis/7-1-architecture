@@ -31,3 +31,597 @@
 // VENDORS
 @import './vendors/bootstrap';
 @import './vendors/semantic-ui';
+
+
+
+
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 0 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 1150px;
+}
+
+.midnight-green {
+
+    width: 100%;
+    padding-top: 77px;
+    background-color: #014E56;
+}
+
+.nav {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+
+    &__blla {
+        display: flex;
+        align-items: center;
+    }
+
+    &__logo {
+        width: 160px;
+        height: 40px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: block;
+        content: '';
+        background-image: url(../images/myteam.svg);
+
+        &:hover {
+            color: white;
+            opacity: .7;
+        }
+
+        &:active {
+            color: white;
+            opacity: .4;
+        }
+    }
+
+    &__ul {
+        margin-left: 80px;
+        display: flex;
+        align-items: center;
+        list-style: none;
+
+
+        .nav__link {
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 28px;
+
+            /* identical to box height, or 156% */
+
+            color: #FFFFFF;
+            display: block;
+            margin-right: 40px;
+            text-decoration: none;
+
+            &:hover {
+                transition: all ease-out .3s;
+                color: #F67E7E;
+            }
+        }
+
+
+
+    }
+
+    .nav__btn {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 28px;
+
+        /* identical to box height, or 156% */
+
+        color: #FFFFFF;
+        display: block;
+        text-decoration: none;
+        border: 2px solid #FFFFFF;
+
+        border-radius: 24px;
+        padding: 8px 30px;
+
+        &:hover {
+            transition: .4s;
+            color: #002529;
+            background-color: #fff;
+        }
+    }
+}
+
+
+
+.sec {
+    padding-bottom: 250px;
+    position: relative;
+    margin-top: 130px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+
+
+    .border {
+        top: 0;
+        left: 60%;
+        background: #79C8C7;
+        position: absolute;
+        width: 50px;
+        height: 4px;
+    }
+
+    .line {
+        background: #79C8C7;
+        width: 50px;
+        height: 4px;
+    }
+
+    &__title {
+        text-align: left;
+        width: 635px;
+        font-weight: bold;
+        font-size: 100px;
+        line-height: 100px;
+
+        /* or 100% */
+
+        color: #FFFFFF;
+        position: relative;
+
+        .talent {
+            color: #f67e7e;
+        }
+
+        &::before {
+            left: -228px;
+            position: absolute;
+            display: block;
+            content: '';
+            width: 200px;
+            height: 200px;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-image: url(../images/Group8.png);
+        }
+    }
+
+    &__text {
+
+        width: 445px;
+        margin-top: 50px;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 28px;
+        position: relative;
+        /* or 156% */
+
+        color: #FFFFFF;
+
+        &::after {
+
+            position: absolute;
+            top: 362px;
+            display: block;
+            content: '';
+            width: 358px;
+            height: 200px;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-image: url(../images/Group4.svg);
+        }
+    }
+}
+
+
+.darkgreen {
+    height: 100%;
+    width: 100%;
+    background: #012F34;
+
+    .section {
+        padding-bottom: 140px;
+        position: relative;
+        justify-content: space-between;
+        display: flex;
+
+        .b--color {
+
+            display: block;
+            position: absolute;
+            top: 120px;
+            width: 50px;
+            height: 4px;
+            background: #F67E7E;
+        }
+
+        &__title {
+            margin-top: 190px;
+            width: 485px;
+            font-weight: bold;
+            font-size: 48px;
+            line-height: 48px;
+
+            /* or 100% */
+
+            color: #FFFFFF;
+        }
+
+        .section__right {
+            position: relative;
+            margin-top: 190px;
+
+            &::after {
+                position: absolute;
+                top: 200px;
+                right: -318px;
+                display: block;
+                content: '';
+                width: 200px;
+                height: 200px;
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-image: url(../images/Group10.png);
+            }
+        }
+
+        &__box {
+            width: 445px;
+
+            .section__text {
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 28px;
+
+                /* identical to box height, or 156% */
+
+                color: #F67E7E;
+            }
+
+            .section__paragraph {
+                font-weight: 600;
+                font-size: 15px;
+                line-height: 25px;
+                /* or 167% */
+
+                color: #FFFFFF;
+
+                mix-blend-mode: normal;
+                opacity: 0.8;
+
+
+            }
+
+        }
+
+    }
+
+}
+
+
+
+.sacramentostategreen {
+    width: 100%;
+    height: 100%;
+    background: #004047;
+
+    .sect1 {
+        padding-bottom: 151px;
+        display: block;
+
+        &__title {
+            font-weight: bold;
+            font-size: 48px;
+            line-height: 48px;
+            position: relative;
+            /* or 100% */
+            text-align: center;
+            margin-right: 16px;
+            padding-top: 140px;
+            color: #FFFFFF;
+
+            .sect1__span {
+                color: #79C8C7;
+            }
+
+            &::before {
+                top: 0;
+                left: -201px;
+                position: absolute;
+                background-image: url(../images/Group8Copy.svg);
+                content: '';
+                display: block;
+                background-repeat: no-repeat;
+                background-size: contain;
+                width: 147px;
+                height: 100px;
+            }
+
+            &::after {
+                top: 720px;
+                right: -217px;
+                position: absolute;
+                background-image: url(../images/left.svg);
+                content: '';
+                display: block;
+                background-repeat: no-repeat;
+                background-size: contain;
+                width: 200px;
+                height: 200px;
+            }
+        }
+
+        .sect1__boxs {
+            margin-top: 92px;
+            justify-content: space-between;
+
+            display: flex;
+
+
+            .sect1__box {
+                z-index: 1;
+                position: relative;
+            }
+
+            .sect1__box::before {
+                z-index: -1;
+                position: absolute;
+                top: -35px;
+                background-image: url(../images/“.svg);
+                left: 140px;
+                display: block;
+                width: 67px;
+                height: 56px;
+                content: '';
+                background-repeat: no-repeat;
+                background-size: contain;
+
+            }
+
+            .sect1__pi {
+                width: 350px;
+                text-align: center;
+
+                font-weight: 600;
+                font-size: 15px;
+                line-height: 25px;
+
+                /* or 167% */
+                text-align: center;
+
+                color: #FFFFFF;
+
+
+            }
+
+            .sect1__txt {
+                margin-top: 24px;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 28px;
+
+                /* identical to box height, or 156% */
+                text-align: center;
+
+                color: #79C8C7;
+            }
+
+            .sect1__paragraph {
+                margin-top: 5px;
+                font-weight: 500;
+                font-size: 13px;
+                line-height: 18px;
+
+                /* identical to box height, or 138% */
+                text-align: center;
+
+                color: #FFFFFF;
+
+
+            }
+
+            .sect1__images {
+                background-repeat: no-repeat;
+                background-size: contain;
+                margin-top: 32px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 62px;
+                height: 62px;
+            }
+        }
+    }
+}
+
+
+.lightcoral {
+    width: 100%;
+    height: 100%;
+    background: #F67E7E;
+
+    .next {
+        padding-top: 76px;
+        padding-bottom: 76px;
+        justify-content: space-around;
+        display: flex;
+        align-items: center;
+
+        &__txt {
+            position: relative;
+            font-weight: bold;
+            font-size: 48px;
+            line-height: 48px;
+
+            /* identical to box height, or 100% */
+
+            color: #012F34;
+
+            &::before {
+                left: -304px;
+                top: -20px;
+                position: absolute;
+                display: block;
+                background-repeat: no-repeat;
+                background-size: contain;
+                width: 200px;
+                height: 244px;
+                background-image: url(../images/Group1.svg);
+                content: '';
+            }
+        }
+
+        &__btn {
+            padding: 10px 33px;
+            border: 2px solid #012F34;
+            border-radius: 24px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 28px;
+
+            /* identical to box height, or 156% */
+
+            color: #012F34;
+
+            &:hover {
+                transition: all ease-out .3s;
+                color: #FFFFFF;
+                background: #012F34;
+            }
+        }
+    }
+}
+
+.ft {
+    width: 100%;
+    height: 100%;
+    background: #002529;
+
+    .footer {
+        justify-content: space-between;
+        display: flex;
+        padding-bottom: 48px;
+        padding-top: 48px;
+
+        .flex {
+            display: flex;
+        }
+
+        .ulli {
+            margin-top: 25px;
+            margin-left: 0px;
+        }
+
+        .footer__address {
+            margin-left: 100px;
+            width: 208px;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 32px;
+
+            /* or 167% */
+
+            color: #FFFFFF;
+
+            mix-blend-mode: normal;
+            opacity: 0.6;
+        }
+
+        .linki {
+            justify-content: flex-end;
+            display: flex;
+            align-items: center;
+        }
+
+        .facebook {
+            margin-right: 16px;
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 24px;
+            height: 24px;
+            background-image: url(../images/facebook.svg);
+
+            &:hover {
+                background-color: #F67E7E;
+            }
+        }
+
+        .picsart {
+            margin-right: 16px;
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 24px;
+            height: 24px;
+            background-image: url(../images/picsart.svg);
+
+            &:hover {
+                background-color: #F67E7E;
+            }
+        }
+
+        .twitter {
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 24px;
+            height: 24px;
+            background-image: url(../images/twitter.svg);
+
+            &:hover {
+                background-color: #F67E7E;
+            }
+        }
+
+        .h33 {
+            margin-top: 51px;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 25px;
+
+            /* identical to box height, or 167% */
+            text-align: right;
+
+            color: #FFFFFF;
+
+            mix-blend-mode: normal;
+            opacity: 0.6;
+        }
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+.newt {
+    width: 730px;
+}
+
+.tii {
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 100px;
+    width: 0;
+}
+
+.border {
+    background-color: salmon;
+}
